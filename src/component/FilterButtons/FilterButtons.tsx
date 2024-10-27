@@ -11,7 +11,7 @@ const FilterButtons: React.FC = () => {
         filterButtons.map((button)=>(
           <button
           onClick={() => setFilter(button)}
-          className={classNames('text-white bg-slate-500 rounded-lg px-2 capitalize', {
+          className={classNames('text-white rounded-lg px-2 capitalize', {
             'bg-lime-600': filter === button,
             'bg-slate-500': filter !== button,
           })}
